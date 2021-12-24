@@ -1,0 +1,218 @@
+module:
+    hugoVersion:
+        extended: true
+        min: "0.87.0"
+
+baseurl: https://joonparkhere.netlify.app/
+languageCode: ko-kr
+paginate: 5
+title: joonparkhere's blog
+
+# GA Tracking ID
+googleAnalytics:
+
+# Theme i18n support
+# Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
+DefaultContentLanguage: ko
+
+# Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
+# This will make .Summary and .WordCount behave correctly for CJK languages.
+hasCJKLanguage: true
+
+params:
+    mainSections:
+        - post
+    featuredImageField: image
+    rssFullContent: true
+    favicon:
+
+    footer:
+        since: 2021
+        customText:
+
+    dateFormat:
+        published: Jan 02, 2006
+        lastUpdated: Jan 02, 2006
+
+    sidebar:
+        emoji: 👨‍👩‍👧‍👦
+        subtitle: Site Description
+        avatar:
+            enabled: true
+            local: true
+            src: img/avatar.png
+
+    article:
+        math: true  # KaTex option
+        toc: true   # table of contents
+        readingTime: false
+        license:
+            enabled: true
+            default: 2021 Seungho Park [<tmdgh0221@gmail.com>]
+
+    comments:
+        enabled: true
+        provider: giscus
+
+        giscus:
+            repo: joonparkhere/records
+            repoID: R_kgDOGk6JhQ
+            category: General
+            categoryID: DIC_kwDOGk6Jhc4CAaMC
+            mapping: title
+            lightTheme:
+            darkTheme:
+            reactionsEnabled: 1
+            emitMetadata: 1
+
+        disqusjs:
+            shortname:
+            apiUrl:
+            apiKey:
+            admin:
+            adminLabel:
+
+        utterances:
+            repo:
+            issueTerm: pathname
+            label:
+
+        remark42:
+            host:
+            site:
+            locale:
+
+        vssue:
+            platform:
+            owner:
+            repo:
+            clientId:
+            clientSecret:
+            autoCreateIssue: false
+
+        # Waline client configuration see: https://waline.js.org/en/reference/client.html
+        waline:
+            serverURL:
+            lang:
+            visitor:
+            avatar:
+            emoji:
+                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+            requiredMeta:
+                - name
+                - email
+                - url
+            placeholder:
+            locale:
+                admin: Admin
+
+        twikoo:
+            envId:
+            region:
+            path:
+            lang:
+
+        gitalk:
+            owner:
+            admin:
+            repo:
+            clientID:
+            clientSecret:
+
+        cusdis:
+            host:
+            id:
+
+    widgets:
+        enabled:
+            - search
+            - archives
+            - tag-cloud
+
+        archives:
+            limit: 3
+
+        tagCloud:
+            limit: 20
+
+    opengraph:
+        twitter:
+            # Your Twitter username
+            site: joonparkhere
+
+            # Available values: summary, summary_large_image
+            card: summary
+
+    defaultImage:
+        opengraph:
+            enabled: false
+            local: false
+            src:
+
+    colorScheme:
+        # Display toggle
+        toggle: true
+
+        # Available values: auto, light, dark
+        default: auto
+
+    imageProcessing:
+        cover:
+            enabled: true
+        content:
+            enabled: true
+
+### Custom menu
+menu:
+    main:
+        - identifier: home
+          name: Home
+          url: /
+          weight: -100
+          params:
+              newTab: false
+              icon: home
+        - identifier: categories
+          name: Categories
+          url: /categories
+          weight: -60
+          params:
+              newTab: false
+              icon: category
+        - identifier: tags
+          name: Tags
+          url: /tags
+          weight: -50
+          params:
+              newTab: false
+              icon: tag
+
+    social:
+        - identifier: github
+          name: GitHub
+          url: https://github.com/joonparkhere
+          params:
+            icon: brand-github
+
+related:
+    includeNewer: true
+    threshold: 30
+    toLower: false
+    indices:
+        - name: tags
+          weight: 100
+
+        - name: categories
+          weight: 200
+
+markup:
+    goldmark:
+        renderer:
+            ## Set to true if you have HTML content inside Markdown
+            unsafe: false
+    tableOfContents:
+        endLevel: 3
+        ordered: true
+        startLevel: 2
+    highlight:
+        noClasses: true
