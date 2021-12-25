@@ -19,6 +19,9 @@ DefaultContentLanguage: ko
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: true
 
+staticDir:
+    - assets
+
 ignoreFiles:
     - project/*
 
@@ -67,7 +70,7 @@ params:
         - post
     featuredImageField: image
     rssFullContent: true
-    favicon: img/laptop.ico
+    favicon: img/favicon.ico
 
     footer:
         since: 2021
