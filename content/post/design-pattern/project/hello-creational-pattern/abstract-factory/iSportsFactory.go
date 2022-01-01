@@ -1,20 +1,18 @@
 package abstract_factory
 
-import "fmt"
-
 type iSportsFactory interface {
 	makeShoe() iShoe
 	makeShirt() iShirt
 }
 
-func getSportsFactory(brand string) (iSportsFactory, error) {
+func getSportsFactory(brand string) iSportsFactory {
 	if brand == "adidas" {
-		return &adidas{}, nil
+		return &adidas{}
 	}
 
 	if brand == "nike" {
-		return &nike{}, nil
+		return &nike{}
 	}
 
-	return nil, fmt.Errorf("Wrong brand type passed")
+	return nil
 }

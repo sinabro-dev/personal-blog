@@ -6,12 +6,11 @@ import (
 )
 
 func Test(t *testing.T) {
-	adidasFactory, _ := getSportsFactory("adidas")
-	nikeFactory, _ := getSportsFactory("nike")
-
+	adidasFactory := getSportsFactory("adidas")
 	adidasShoe := adidasFactory.makeShoe()
 	adidasShirt := adidasFactory.makeShirt()
 
+	nikeFactory := getSportsFactory("nike")
 	nikeShoe := nikeFactory.makeShoe()
 	nikeShirt := nikeFactory.makeShirt()
 
@@ -23,15 +22,11 @@ func Test(t *testing.T) {
 }
 
 func printShoeDetails(s iShoe) {
-	fmt.Printf("Logo: %s", s.getLogo())
-	fmt.Println()
-	fmt.Printf("Size: %d", s.getSize())
-	fmt.Println()
+	fmt.Printf("Logo: %s\n", s.getLogo())
+	fmt.Printf("Size: %d\n", s.getSize())
 }
 
 func printShirtDetails(s iShirt) {
-	fmt.Printf("Logo: %s", s.getLogo())
-	fmt.Println()
-	fmt.Printf("Size: %d", s.getSize())
-	fmt.Println()
+	fmt.Printf("Logo: %s\n", s.getLogo())
+	fmt.Printf("Size: %d\n", s.getSize())
 }
