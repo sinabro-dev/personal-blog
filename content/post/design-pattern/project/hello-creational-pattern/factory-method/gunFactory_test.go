@@ -6,16 +6,14 @@ import (
 )
 
 func Test(t *testing.T) {
-	ak47, _ := getGun("ak47")
-	musket, _ := getGun("musket")
+	ak47 := getGun("ak47")
+	musket := getGun("musket")
 
 	printDetails(ak47)
 	printDetails(musket)
 }
 
 func printDetails(g iGun) {
-	fmt.Printf("Gun: %s", g.getName())
-	fmt.Println()
-	fmt.Printf("Power: %d", g.getPower())
-	fmt.Println()
+	fmt.Printf("Gun: %s\n", g.getName())
+	fmt.Printf("Power: %d\n", g.getPower())
 }

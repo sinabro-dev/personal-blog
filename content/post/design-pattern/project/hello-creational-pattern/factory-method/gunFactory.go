@@ -1,13 +1,13 @@
 package factory_method
 
-import "fmt"
-
-func getGun(gunType string) (iGun, error) {
+func getGun(gunType string) iGun {
 	if gunType == "ak47" {
-		return newAk47(), nil
+		return newAk47()
 	}
+
 	if gunType == "musket" {
-		return newMusket(), nil
+		return newMusket()
 	}
-	return nil, fmt.Errorf("Wrong gun type passed")
+
+	return nil
 }
