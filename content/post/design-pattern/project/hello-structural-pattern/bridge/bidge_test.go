@@ -2,6 +2,11 @@ package bridge
 
 import "testing"
 
+func TestBefore(t *testing.T) {
+	linuxComputerWithCanonPrinter := &linuxCanon{}
+	linuxComputerWithCanonPrinter.print()
+}
+
 func TestAfter(t *testing.T) {
 	macComputer := &mac{}
 	windowsComputer := &windows{}
