@@ -1,13 +1,15 @@
 package adapter
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestBefore(t *testing.T) {
 	client := &client{}
 
 	client.insertLightningConnectorIntoPhone(&iphone{})
-	//client.insertLightningConnectorIntoPhone(&galaxy{})
-	//client.insertLightningConnectorIntoPhone(&vega{})
+	client.insertLightningConnectorIntoPhone(&nokia{})
+	//client.insertLightningConnectorIntoPhone(&galaxy{})	// compile error
 }
 
 func TestAfter(t *testing.T) {
