@@ -5,6 +5,14 @@ import (
 	"testing"
 )
 
+func TestBefore(t *testing.T) {
+	chipWhipEspresso := &espresso{
+		isWhip: true,
+		isChip: true,
+	}
+	fmt.Printf("Price of espresso with whip and chip: %d\n", chipWhipEspresso.getPrice())
+}
+
 func TestAfter(t *testing.T) {
 	americano := &americano{}
 	whipAmericano := &whip{
