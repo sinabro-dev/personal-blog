@@ -1,7 +1,8 @@
 ---
+
 title: 디자인 패턴 GURU - Structural Pattern
 description: Refactoring Guru 서적을 기반으로 한 디자인 패턴 학습 Structural Pattern
-date: 2022-01-11
+date: 2022-01-10
 image: images/index-design-patterns.png
 categories:
 - Software Engineering
