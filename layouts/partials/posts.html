@@ -34,16 +34,16 @@
 				  </h3>
 				</div>
 	
-				<div>
+			  {{ if gt .WordCount 0 }}
+			  <div>
 				  <div class="col-12 d-inline-block text-gray mb-2 pr-4">
-				  {{ if gt .WordCount 0 }}
 					  {{ .Summary | safeHTML }}
-				  {{ end }}
-				  {{ if gt .WordCount 20 }}
+					  {{ if gt .WordCount 20 }}
 					  ...
-				  {{ end }}
+					  {{ end }}
 				  </div>
-				</div>
+			  </div>
+		    {{ end }}
 	
 				<div class="f6 text-gray mt-2">
 				  {{ with .Params.tags }}
