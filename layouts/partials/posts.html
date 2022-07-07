@@ -24,8 +24,10 @@
 <!--	todo  -->
 		{{/* {{ range .Paginator.Pages }} */}}
 	  {{ range .Pages }}
+<!--	todo  -->
 		<li class="col-12 d-flex width-full py-4 border-bottom color-border-secondary public source">
 		  <div class="col-12 d-inline-block">
+			 
 				<div class="d-inline-block mb-1">
 				  <h3 class="wb-break-all">
 						<a href="{{ .Permalink }}">{{ .Title }}</a>
@@ -34,7 +36,12 @@
 	
 				<div>
 				  <div class="col-12 d-inline-block text-gray mb-2 pr-4">
-					{{ .Summary | safeHTML }}
+				  {{ if gt .WordCount 0 }}
+					  {{ .Summary | safeHTML }}
+				  {{ end }}
+				  {{ if gt .WordCount 20 }}
+					  ...
+				  {{ end }}
 				  </div>
 				</div>
 	
@@ -51,8 +58,8 @@
 				  {{ end }}
 	
 				  Created
-				  <relative-time datetime="{{ .PublishDate.Format " Mon, 02 Jan 2006 15:04:05 -0700" }}" class="no-wrap" title="{{ .PublishDate.Format " Mon, 02 Jan 2006 15:04:05 -0700" }}">
-						{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}
+				  <relative-time datetime="{{ .PublishDate.Format `02 Jan, 2006` }}" class="no-wrap" title="{{ .PublishDate.Format `02 Jan, 2006` }}">
+						{{ .PublishDate.Format "02 Jan, 2006" }}
 				  </relative-time>
 				</div>
 		  </div>
@@ -74,6 +81,7 @@
 				{{/* {{ end }} */}}
 <!--			</div>-->
 <!--		</div>-->
+<!--	todo  -->
   </div>
 </div>
 {{ end }}

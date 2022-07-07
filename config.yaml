@@ -20,6 +20,8 @@ pygmentsUseClasses: true
 # staticDir:
 #   - assets
 
+summaryLength: 20
+
 ignoreFiles:
   - project/*
 
