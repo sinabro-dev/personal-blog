@@ -4865,7 +4865,7 @@ button.discussion-sidebar-toggle {
     margin: 0;
 }
 .pagehead .path-divider {
-    margin: 0 .25em;
+    margin: 0.25em;
 }
 .pagehead h1 {
     min-height: 32px;
@@ -9680,8 +9680,8 @@ dl.form.developer-select-account {
     position: relative;
     margin-top: 16px;
     margin-bottom: 16px;
-    border: 1px solid var(--color-border-primary, #ddd);
-    border-radius: 6px;
+    /*border: 1px solid var(--color-border-primary, #ddd);*/
+    /*border-radius: 6px;*/
 }
 .file:target {
     border-color: var(--color-auto-blue-4);
@@ -9751,7 +9751,7 @@ dl.form.developer-select-account {
 .file-header {
     padding: 5px 10px;
     background-color: var(--color-bg-secondary);
-    border-bottom: 1px solid var(--color-border-primary);
+    /*border-bottom: 1px solid var(--color-border-primary);*/
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
 }
