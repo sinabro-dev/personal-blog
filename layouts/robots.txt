@@ -1,0 +1,3 @@
+User-agent: *
+Sitemap: https://joonparkhere.netlify.app/sitemap.xml
+Disallow:
