@@ -2888,8 +2888,8 @@ p.explain .minibutton {
     max-width: 768px;
 }
 .container-lg {
-    /* max-width: 1012px; */
-    max-width: 80vw;
+     max-width: 1012px;
+    /*max-width: 80vw;*/
 }
 .container-lg, .container-xl {
     margin-right: auto;
