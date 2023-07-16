@@ -1265,6 +1265,10 @@ a.branch-name .octicon {
     background: transparent;
     border: 0;
 }
+.markdown-body *.weak {
+    font-weight: lighter;
+    font-size: 0.85em;
+}
 .markdown-body .highlight {
     margin-bottom: 16px;
 }
