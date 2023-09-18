@@ -1,5 +1,5 @@
-baseURL: https://joonparkhere.netlify.app/
-title: joonparkhere's blog
+baseURL: https://sinabro.netlify.app/
+title: sinabro's blog
 
 languageCode: ko-kr
 DefaultContentLanguage: ko  # Available values: en, fr, id, ja, ko, pt-br, zh-cn, zh-tw, es, de, nl, it, th, el, uk
@@ -66,19 +66,19 @@ markup:
 
 params:
   author: Seungho Park
-  description: sample description
-  github: joonparkhere
+  description: Strive to become a Specialist with a Blueprint called Popularization of Blockchain.
+  github: sinabro-dev
   # facebook:
   # twitter:
-  # linkedin:
+  linkedin: https://www.linkedin.com/in/sinabro-dev/
   # instagram:
   # tumblr:
-  email: tmdgh0221@gmail.com
+  email: sinabro2dev@gmail.com
   # url:
-  keywords: sample keywords
+  # keywords: sample keywords
   rss: false
   lastmod: true
-  favicon: "/images/github.png"
+  favicon: "/images/avatar.png"
   location: Korea
   userStatusEmoji: 😶
   # links:
